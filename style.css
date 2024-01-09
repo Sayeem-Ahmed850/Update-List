@@ -1,0 +1,103 @@
+body {
+    background: linear-gradient(to left, rgb(69, 13, 49), rgb(29, 12, 42), rgb(0, 0, 0));
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-top: 40px;
+}
+
+#border {
+    width: 500px;
+    padding: 10px;
+    border-radius: 10px;
+    animation: animate 19s linear infinite;
+}
+
+@keyframes animate {
+    0% {
+        border: 2px solid rgb(255, 0, 0)
+    }
+    20% {
+        border: 2px solid rgb(38, 255, 0)
+    }
+    40% {
+        border: 2px solid rgb(60, 0, 255)
+    }
+    80% {
+        border: 2px solid rgb(255, 0, 225)
+    }
+    100% {
+        border: 2px solid rgb(255, 94, 0);
+    }
+}
+
+h2 {
+    color: white;
+    text-align: center;
+}
+
+table,
+th,
+td {
+    border-collapse: collapse;
+    width: 500px;
+    text-align: center;
+    color: white;
+    font-size: 17px;
+    font-weight: 700;
+    padding: 6px;
+}
+
+@media (max-width:500px) {
+    #border {
+        width: 260px;
+    }
+    table,
+    th,
+    td {
+        width: 260px;
+    }
+}
+
+#border {
+    display: none;
+}
+
+button {
+    position: absolute;
+    top: 90%;
+    width: 300px;
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 10px;
+    font-weight: 700;
+    font-size: 18px;
+    background-color: rgb(111, 21, 112);
+    outline: none;
+    border: none;
+    color: white
+}
+
+#icon {
+    display: none;
+}
+
+i {
+    color: white;
+    font-size: 40px;
+    position: relative;
+    top: 300px;
+}
+
+@keyframes lodar {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(380deg);
+    }
+}
